@@ -22,8 +22,8 @@ jobs:
     - name: Fix Permission Denied
       run: chmod +x gradlew
 
-    - name: Build with Gradle
-      run: ./gradlew build
+    - name: Build Bukkit Version Only
+      run: ./gradlew :bukkit:build
 
     - name: Upload Artifact
       uses: actions/upload-artifact@v4
